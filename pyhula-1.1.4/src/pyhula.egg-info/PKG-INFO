@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pyhula
+Version: 1.1.7
+Summary: Hula package - Python 3.13+ compatible
+Author: HighGreat
+Author-email: highgreat@hg-fly.com
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: C
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+Hula package - Python 3.13+ compatible

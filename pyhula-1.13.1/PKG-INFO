@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: pyhula
+Version: 1.13.1
+Summary: Modern Python drone control library - PyHula rebuilt for Python 3.8+
+Home-page: https://github.com/janisgra/pyhula-win11
+Author: HighGreat
+Author-email: highgreat@hg-fly.com
+License: MIT
+Project-URL: Bug Reports, https://github.com/janisgra/pyhula-win11/issues
+Project-URL: Source, https://github.com/janisgra/pyhula-win11
+Project-URL: Documentation, https://github.com/janisgra/pyhula-win11/blob/main/README.md
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: C
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Hardware :: Hardware Drivers
+Requires-Python: >=3.8
+Requires-Dist: numpy>=1.19.0
+Requires-Dist: opencv-python>=4.5.0
+Requires-Dist: pyserial>=3.4
+Requires-Dist: pymavlink>=2.4.0
+Requires-Dist: scipy>=1.6.0
+Provides-Extra: all
+Requires-Dist: pytest>=6.0; extra == "all"
+Requires-Dist: pytest-cov>=2.10; extra == "all"
+Requires-Dist: matplotlib>=3.3.0; extra == "all"
+Requires-Dist: pillow>=8.0.0; extra == "all"
+Requires-Dist: sphinx>=3.0.0; extra == "all"
+Requires-Dist: sphinx-rtd-theme>=0.5.0; extra == "all"
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0; extra == "dev"
+Requires-Dist: pytest-cov>=2.10; extra == "dev"
+Requires-Dist: black>=21.0; extra == "dev"
+Requires-Dist: flake8>=3.8; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: sphinx>=3.0.0; extra == "docs"
+Requires-Dist: sphinx-rtd-theme>=0.5.0; extra == "docs"
+Provides-Extra: visualization
+Requires-Dist: matplotlib>=3.3.0; extra == "visualization"
+Requires-Dist: pillow>=8.0.0; extra == "visualization"
+
+PyHula - Python Drone Control Library
+
+This is a modernized version of the PyHula library, originally designed for Python 3.6,
+now fully compatible with Python 3.8 through Python 3.13+ and future versions.
+
+Features:
+- Drone flight control and command processing
+- MAVLink communication protocol support
+- Formation flying capabilities
+- LED control and visual effects
+- Real-time data processing
+- Cross-platform compatibility (Windows, Linux)
+
+Requirements:
+- Python 3.8 or higher
+- OpenCV (cv2)
+- NumPy
+- PySerial
+- PyMAVLink
+- SciPy
+- Cython (for building from source)
+
+This port maintains full API compatibility with the original library while
+adding support for modern Python versions and improved build systems.
