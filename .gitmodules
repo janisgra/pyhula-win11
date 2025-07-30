@@ -1,0 +1,4 @@
+[submodule "submoduls/pyhula-install-wrapper"]
+	path = submoduls/pyhula-install-wrapper
+	url = https://github.com/janisgra/pyhula-install-wrapper.git
+	branch = master
