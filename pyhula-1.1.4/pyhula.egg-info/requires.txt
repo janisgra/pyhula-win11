@@ -1,0 +1,7 @@
+numpy>=1.18.2
+psutil>=5.9.7
+pymavlink>=2.4.41
+opencv-python>=4.3.0.38
+
+[docs]
+sphinx<4.0.0,>=3.0.0

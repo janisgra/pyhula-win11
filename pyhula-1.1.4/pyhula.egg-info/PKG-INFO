@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: pyhula
+Version: 1.1.4
+Summary: Hula package
+Home-page: UNKNOWN
+Author: HighGreat
+Author-email: highgreat@hg-fly.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Education
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+
+# pyhula
+Hula python编程依赖包。  
+A Python pack used by Hula.
+
+## 安装 / Installing
+在终端执行如下指令以安装pyhula。   
+Input the following code in powershell(cmd.exe) to install pyhula. 
+```
+pip install pyhula
+```
+
+## 激活 / Activating
+pyhula使用前需要使用激活工具进行激活。请联系作者，获得对应的激活工具与相关文档。  
+pyhula needs to be activated before it can be used. Contact with the author to get the activator and documents.
+
+## 查看版本 / Checking version
+* 在控制终端执行pip list 进行查看  
+Input "pip list" in powershell(cmd.exe) to get pyhula's verison
+
+* 在程序中执行  
+Using the following code.
+```
+import pyhula
+ver = pyhula.get_version()
+print(ver)
+```
+
+## 使用 / Usage
+使用以下代码获取一个UserApi实例后，可以通过UserApi所提供的接口对hula无人机进行控制。接口说明请查看doc/html/中文/index.html文件。  
+Use the following codes to create a userApi instance. Its interfaces can be used to control hula plane. Go to doc/html/English/index.html to see the interface specification.
+```
+import pyhula
+api = pyhula.UserApi()
+
+
+## v 1.0.1
+
+1. 初始版本  
+Initial version
+
