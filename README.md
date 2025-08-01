@@ -88,3 +88,99 @@ git commit -m "Update pyhula-install-wrapper to latest"
   smu = "!git submodule update --init --remote --merge && git add . && git commit -m 'Update submodules'"
 ```
 
+# PyHula Win11 Project Structure
+
+This repository contains a comprehensive collection of tools and analysis for the PyHula drone control library.
+
+## Directory Structure
+
+```
+pyhula-win11/
+├── cpp-mavlink-controller/          # C++ MAVLink drone controller
+│   ├── src/                         # C++ source files
+│   ├── include/                     # MAVLink headers
+│   ├── build/                       # Build directory (created by cmake)
+│   ├── wiresharkdump/              # Network captures for analysis
+│   └── CMakeLists.txt              # Build configuration
+├── reverse-engineering/             # Reverse engineering analysis
+│   ├── pyhula-wheel-analysis/      # Decompiled PyHula wheel contents
+│   └── ghidra-decompiled/          # Ghidra analysis results
+├── pyhula-1.1.4/                  # PyHula source package
+├── pyhula-1.13.1/                 # Enhanced PyHula version
+├── submoduls/                      # Git submodules
+│   └── pyhula-install-wrapper/     # Installation utilities
+├── wiresharkRec/                   # Additional network recordings
+├── build-cpp-controller.ps1       # Build script for C++ controller
+└── PROJECT_STRUCTURE.md           # This file
+```
+
+## Quick Start
+
+### 1. Build C++ Controller
+```powershell
+.\build-cpp-controller.ps1
+```
+
+### 2. Install PyHula Environment
+```powershell
+cd submoduls\pyhula-install-wrapper
+.\INSTALL_PYHULA.bat
+```
+
+### 3. Run Network Analysis
+```powershell
+cd cpp-mavlink-controller\build
+.\bin\raw-analyzer.exe
+```
+
+## Components
+
+### C++ MAVLink Controller
+- **Purpose**: Direct MAVLink communication with drone
+- **Features**: TCP connection, message parsing, command sending
+- **Build**: Uses CMake, compatible with Windows
+- **Tools**: Message analyzer, working replayer, connection tester
+
+### PyHula Analysis
+- **Wheel Analysis**: Decompiled Python wheel for protocol understanding
+- **Ghidra Results**: Reverse engineered binary analysis
+- **Network Captures**: Wireshark recordings of successful drone operations
+
+### Installation Wrapper
+- **Submodule**: Automated PyHula environment setup
+- **Features**: Python 3.6 installation, virtual environment, examples
+- **Target**: Students and educational use
+
+## Development Workflow
+
+### Protocol Analysis
+1. Use Wireshark captures in `cpp-mavlink-controller/wiresharkdump/`
+2. Analyze with `raw-analyzer.exe`
+3. Compare with PyHula wheel analysis in `reverse-engineering/`
+4. Test protocols with `working-replayer.exe`
+
+### Code Development
+1. Modify C++ sources in `cpp-mavlink-controller/src/`
+2. Build with `.\build-cpp-controller.ps1`
+3. Test with drone using built executables
+4. Document findings in network captures
+
+### Integration Testing
+1. Use PyHula environment from submodule
+2. Compare C++ implementation with Python behavior
+3. Validate protocol compatibility
+
+## Git Submodules
+
+This repository uses Git submodules for modular development:
+
+```bash
+# Initialize submodules (after clone)
+git submodule update --init --recursive
+
+# Update submodules
+git submodule update --remote --merge
+git add submoduls/pyhula-install-wrapper
+git commit -m "Update pyhula-install-wrapper to latest"
+```
+
