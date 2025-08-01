@@ -16,6 +16,7 @@ Install instructions:
 
 import os
 import sys
+from pathlib import Path
 from setuptools import setup, Extension, find_packages
 
 # Package metadata
@@ -52,47 +53,57 @@ author = 'HighGreat'
 author_email = 'highgreat@hg-fly.com'
 
 def find_c_files():
+    """Find C source files with robust path handling"""
+    project_root = Path(__file__).parent.absolute()
+    src_dir = project_root / 'src'
+    
+    if not src_dir.exists():
+        print(f"WARNING: Source directory not found: {src_dir}")
+        return []
+    
     c_extensions = []
     
-    # Manually define the correct module mappings to avoid path parsing issues
-    # This ensures module names like 'pyhula.pypack.fylo.commandprocessor' 
-    # instead of corrupted names like 'fyloommandprocessor'
+    # Use pathlib for robust cross-platform path handling
     module_mappings = {
-        './src/pyhula/pypack/fylo/commandprocessor.c': 'pyhula.pypack.fylo.commandprocessor',
-        './src/pyhula/pypack/fylo/config.c': 'pyhula.pypack.fylo.config',
-        './src/pyhula/pypack/fylo/controlserver.c': 'pyhula.pypack.fylo.controlserver',
-        './src/pyhula/pypack/fylo/mavanalyzer.c': 'pyhula.pypack.fylo.mavanalyzer',
-        './src/pyhula/pypack/fylo/mavlink.c': 'pyhula.pypack.fylo.mavlink',
-        './src/pyhula/pypack/fylo/msganalyzer.c': 'pyhula.pypack.fylo.msganalyzer',
-        './src/pyhula/pypack/fylo/stateprocessor.c': 'pyhula.pypack.fylo.stateprocessor',
-        './src/pyhula/pypack/fylo/taskprocessor.c': 'pyhula.pypack.fylo.taskprocessor',
-        './src/pyhula/pypack/fylo/uwb.c': 'pyhula.pypack.fylo.uwb',
+        src_dir / 'pyhula/pypack/fylo/commandprocessor.c': 'pyhula.pypack.fylo.commandprocessor',
+        src_dir / 'pyhula/pypack/fylo/config.c': 'pyhula.pypack.fylo.config',
+        src_dir / 'pyhula/pypack/fylo/controlserver.c': 'pyhula.pypack.fylo.controlserver',
+        src_dir / 'pyhula/pypack/fylo/mavanalyzer.c': 'pyhula.pypack.fylo.mavanalyzer',
+        src_dir / 'pyhula/pypack/fylo/mavlink.c': 'pyhula.pypack.fylo.mavlink',
+        src_dir / 'pyhula/pypack/fylo/msganalyzer.c': 'pyhula.pypack.fylo.msganalyzer',
+        src_dir / 'pyhula/pypack/fylo/stateprocessor.c': 'pyhula.pypack.fylo.stateprocessor',
+        src_dir / 'pyhula/pypack/fylo/taskprocessor.c': 'pyhula.pypack.fylo.taskprocessor',
+        src_dir / 'pyhula/pypack/fylo/uwb.c': 'pyhula.pypack.fylo.uwb',
         
-        './src/pyhula/pypack/system/buffer.c': 'pyhula.pypack.system.buffer',
-        './src/pyhula/pypack/system/command.c': 'pyhula.pypack.system.command',
-        './src/pyhula/pypack/system/communicationcontroller.c': 'pyhula.pypack.system.communicationcontroller',
-        './src/pyhula/pypack/system/communicationcontrollerfactory.c': 'pyhula.pypack.system.communicationcontrollerfactory',
-        './src/pyhula/pypack/system/dancecontroller.c': 'pyhula.pypack.system.dancecontroller',
-        './src/pyhula/pypack/system/dancefileanalyzer.c': 'pyhula.pypack.system.dancefileanalyzer',
-        './src/pyhula/pypack/system/datacenter.c': 'pyhula.pypack.system.datacenter',
-        './src/pyhula/pypack/system/event.c': 'pyhula.pypack.system.event',
-        './src/pyhula/pypack/system/mavcrc.c': 'pyhula.pypack.system.mavcrc',
-        './src/pyhula/pypack/system/network.c': 'pyhula.pypack.system.network',
-        './src/pyhula/pypack/system/networkcontroller.c': 'pyhula.pypack.system.networkcontroller',
-        './src/pyhula/pypack/system/serialcontroller.c': 'pyhula.pypack.system.serialcontroller',
-        './src/pyhula/pypack/system/state.c': 'pyhula.pypack.system.state',
-        './src/pyhula/pypack/system/system.c': 'pyhula.pypack.system.system',
-        './src/pyhula/pypack/system/taskcontroller.c': 'pyhula.pypack.system.taskcontroller',
+        src_dir / 'pyhula/pypack/system/buffer.c': 'pyhula.pypack.system.buffer',
+        src_dir / 'pyhula/pypack/system/command.c': 'pyhula.pypack.system.command',
+        src_dir / 'pyhula/pypack/system/communicationcontroller.c': 'pyhula.pypack.system.communicationcontroller',
+        src_dir / 'pyhula/pypack/system/communicationcontrollerfactory.c': 'pyhula.pypack.system.communicationcontrollerfactory',
+        src_dir / 'pyhula/pypack/system/dancecontroller.c': 'pyhula.pypack.system.dancecontroller',
+        src_dir / 'pyhula/pypack/system/dancefileanalyzer.c': 'pyhula.pypack.system.dancefileanalyzer',
+        src_dir / 'pyhula/pypack/system/datacenter.c': 'pyhula.pypack.system.datacenter',
+        src_dir / 'pyhula/pypack/system/event.c': 'pyhula.pypack.system.event',
+        src_dir / 'pyhula/pypack/system/mavcrc.c': 'pyhula.pypack.system.mavcrc',
+        src_dir / 'pyhula/pypack/system/network.c': 'pyhula.pypack.system.network',
+        src_dir / 'pyhula/pypack/system/networkcontroller.c': 'pyhula.pypack.system.networkcontroller',
+        src_dir / 'pyhula/pypack/system/serialcontroller.c': 'pyhula.pypack.system.serialcontroller',
+        src_dir / 'pyhula/pypack/system/state.c': 'pyhula.pypack.system.state',
+        src_dir / 'pyhula/pypack/system/system.c': 'pyhula.pypack.system.system',
+        src_dir / 'pyhula/pypack/system/taskcontroller.c': 'pyhula.pypack.system.taskcontroller',
     }
     
-    print(f"Scanning for C source files...")
-    for c_file, module_name in module_mappings.items():
-        if os.path.exists(c_file):
-            print(f" Found: {module_name} -> {c_file}")
+    print(f"Scanning for C source files in: {src_dir}")
+    found_count = 0
+    missing_count = 0
+    
+    for c_file_path, module_name in module_mappings.items():
+        if c_file_path.exists():
+            found_count += 1
+            print(f" Found: {module_name}")
             ext = Extension(
                 module_name,
-                [c_file],
-                include_dirs=['./src'],
+                [str(c_file_path)],  # Convert Path to string for setuptools
+                include_dirs=[str(src_dir)],  # Use absolute path
                 # Python 3.13+ compatibility defines
                 define_macros=[
                     ('PY_SSIZE_T_CLEAN', None),  # Required for Python 3.13+
@@ -105,19 +116,23 @@ def find_c_files():
             )
             c_extensions.append(ext)
         else:
-            print(f" Missing: {c_file}")
+            missing_count += 1
+            print(f" Missing: {c_file_path}")
     
+    print(f"C source file summary: {found_count} found, {missing_count} missing")
     return c_extensions
 
 def get_existing_data_files():
+    """Get data files with robust path handling"""
+    project_root = Path(__file__).parent.absolute()
     data_files = []
+    
     # Check for dance files
     dance_files = []
-    dance_dir = 'src/pyhula/pypack/system/dance'
-    if os.path.exists(dance_dir):
-        for file in os.listdir(dance_dir):
-            if file.endswith('.matxt'):
-                dance_files.append(os.path.join(dance_dir, file))
+    dance_dir = project_root / 'src/pyhula/pypack/system/dance'
+    if dance_dir.exists():
+        for file_path in dance_dir.glob('*.matxt'):
+            dance_files.append(str(file_path))
         print(f"Found {len(dance_files)} dance files")
     
     if dance_files:
@@ -125,23 +140,27 @@ def get_existing_data_files():
     
     # Check for ini files
     ini_files = []
-    for ini_file in ['src/pyhula/pypack/log.ini', 'src/pyhula/pypack/version.ini']:
-        if os.path.exists(ini_file):
-            ini_files.append(ini_file)
+    ini_candidates = [
+        project_root / 'src/pyhula/pypack/log.ini',
+        project_root / 'src/pyhula/pypack/version.ini'
+    ]
+    
+    for ini_file in ini_candidates:
+        if ini_file.exists():
+            ini_files.append(str(ini_file))
     
     if ini_files:
         data_files.append(('Lib/site-packages/pyhula/pypack', ini_files))
-        print(f"Found {len(ini_files)} configuration files")
     
+    print(f"Found {len(data_files)} data file groups")
     return data_files
 
-# Updated classifiers for modern Python versions
+# Updated classifiers for modern Python versions (removed deprecated License classifier)
 classifiers = [
     "Intended Audience :: Education",
     "Intended Audience :: Developers", 
     "Intended Audience :: Science/Research",
     "Development Status :: 4 - Beta",
-    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.8",
@@ -197,25 +216,31 @@ extras_require = {
 }
 
 # Read requirements from file if it exists
+project_root = Path(__file__).parent.absolute()
 try:
-    with open("docs/requirements.txt", "r", encoding="utf-8") as f:
-        file_requirements = [line.strip() for line in f if line.strip() and not line.startswith('#')] # Merge with default requirements, preferring file versions
-        install_requires.extend([req for req in file_requirements if req not in install_requires])
+    requirements_file = project_root / "docs/requirements.txt"
+    if requirements_file.exists():
+        with open(requirements_file, "r", encoding="utf-8") as f:
+            file_requirements = [line.strip() for line in f if line.strip() and not line.startswith('#')] 
+            # Merge with default requirements, preferring file versions
+            install_requires.extend([req for req in file_requirements if req not in install_requires])
 except FileNotFoundError:
     print("No docs/requirements.txt found, using default dependencies")
 
 # Read long description from README
-try:
-    with open('./README.md', encoding='utf-8') as f:
-        long_description = f.read()
-        long_description_content_type = 'text/markdown'
-except FileNotFoundError:
+long_description_content_type = 'text/markdown'
+readme_candidates = [project_root / 'README.md', project_root / 'README.rst']
+for readme_file in readme_candidates:
     try:
-        with open('./README.rst', encoding='utf-8') as f:
+        with open(readme_file, encoding='utf-8') as f:
             long_description = f.read()
-            long_description_content_type = 'text/x-rst'
+            if readme_file.suffix == '.rst':
+                long_description_content_type = 'text/x-rst'
+            break
     except FileNotFoundError:
-        long_description_content_type = 'text/markdown'
+        continue
+else:
+    long_description = description  # Fallback to short description
 
 # Find packages automatically
 packages = find_packages(where='src')
@@ -238,6 +263,7 @@ setup(
     description=description,
     long_description=long_description,
     long_description_content_type=long_description_content_type,
+    license='MIT',  # SPDX license expression
     author=author,
     author_email=author_email,
     url='https://github.com/janisgra/pyhula-win11',
@@ -254,14 +280,17 @@ setup(
     extras_require=extras_require,
     package_data={
         'pyhula': ['f09-lite-trans/*'],
+        '': ['utils/*.py'] if (Path(__file__).parent / 'utils').exists() else [],  # Include utils if exists
     },
+    # Include pyhula_py313.py as a standalone module if it exists
+    py_modules=['pyhula_py313'] if (Path(__file__).parent / 'pyhula_py313.py').exists() else [],
     python_requires='>=3.8',
     classifiers=classifiers,
     zip_safe=False,
     # setuptools configuration
     options={
         'build_ext': {
-            'include_dirs': ['./src'],
+            'include_dirs': [str(Path(__file__).parent / 'src')],  # Use absolute path
         },
         'bdist_wheel': {
             'universal': False,  # Platform-specific wheel due to C extensions
