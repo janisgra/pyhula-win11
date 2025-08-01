@@ -1,0 +1,1236 @@
+No.     Time           Source                Destination           Protocol Length Info
+   1388 384.583942     192.168.100.102       192.168.100.1         TCP      54     56610 → 8888 [ACK] Seq=423 Ack=39221 Win=65280 Len=0
+
+Frame 1388: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: DLinkInterna_ca:55:b2 (a0:a3:f0:ca:55:b2), Dst: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac)
+Internet Protocol Version 4, Src: 192.168.100.102, Dst: 192.168.100.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 40
+    Identification: 0x2c05 (11269)
+    010. .... = Flags: 0x2, Don't fragment
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: TCP (6)
+    Header Checksum: 0x8512 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.102
+    Destination Address: 192.168.100.1
+    [Stream index: 1]
+Transmission Control Protocol, Src Port: 56610, Dst Port: 8888, Seq: 423, Ack: 39221, Len: 0
+    Source Port: 56610
+    Destination Port: 8888
+    [Stream index: 3]
+    [Stream Packet Number: 651]
+    [Conversation completeness: Complete, WITH_DATA (63)]
+    [TCP Segment Len: 0]
+    Sequence Number: 423    (relative sequence number)
+    Sequence Number (raw): 3060767803
+    [Next Sequence Number: 423    (relative sequence number)]
+    Acknowledgment Number: 39221    (relative ack number)
+    Acknowledgment number (raw): 2061828599
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+    Window: 255
+    [Calculated window size: 65280]
+    [Window size scaling factor: 256]
+    Checksum: 0x95ba [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+
+No.     Time           Source                Destination           Protocol Length Info
+   1389 384.586623     192.168.100.1         192.168.100.102       TCP      174    8888 → 56610 [PSH, ACK] Seq=39221 Ack=423 Win=14600 Len=120
+
+Frame 1389: 174 bytes on wire (1392 bits), 174 bytes captured (1392 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac), Dst: DLinkInterna_ca:55:b2 (a0:a3:f0:ca:55:b2)
+Internet Protocol Version 4, Src: 192.168.100.1, Dst: 192.168.100.102
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 160
+    Identification: 0x273f (10047)
+    010. .... = Flags: 0x2, Don't fragment
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xc960 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.1
+    Destination Address: 192.168.100.102
+    [Stream index: 1]
+Transmission Control Protocol, Src Port: 8888, Dst Port: 56610, Seq: 39221, Ack: 423, Len: 120
+    Source Port: 8888
+    Destination Port: 56610
+    [Stream index: 3]
+    [Stream Packet Number: 652]
+    [Conversation completeness: Complete, WITH_DATA (63)]
+    [TCP Segment Len: 120]
+    Sequence Number: 39221    (relative sequence number)
+    Sequence Number (raw): 2061828599
+    [Next Sequence Number: 39341    (relative sequence number)]
+    Acknowledgment Number: 423    (relative ack number)
+    Acknowledgment number (raw): 3060767803
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+    Window: 1825
+    [Calculated window size: 14600]
+    [Window size scaling factor: 8]
+    Checksum: 0x1193 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+    TCP payload (120 bytes)
+Data (120 bytes)
+
+0000  fe 20 b3 01 02 ce fc 77 88 42 55 ff fb ff d2 19   . .....w.BU.....
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 fa ff 00 58 9c 88 fe 20 b4 01 02 ce 84 6e   .....X... .....n
+0030  88 42 55 ff fb ff d1 19 00 00 00 00 00 00 00 00   .BU.............
+0040  00 00 00 00 00 00 00 00 00 00 fa ff 00 58 df c1   .............X..
+0050  fe 20 b5 01 02 ce 66 66 88 42 55 ff fc ff d1 19   . ....ff.BU.....
+0060  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0070  00 00 fa ff 00 58 05 01                           .....X..
+    Data […]: fe20b30102cefc77884255fffbffd219000000000000000000000000000000000000faff00589c88fe20b40102ce846e884255fffbffd119000000000000000000000000000000000000faff0058dfc1fe20b50102ce6666884255fffcffd11900000000000000000000000000000000000
+    [Length: 120]
+
+No.     Time           Source                Destination           Protocol Length Info
+   1390 384.630843     192.168.100.102       192.168.100.1         TCP      54     56610 → 8888 [ACK] Seq=423 Ack=39341 Win=65024 Len=0
+
+Frame 1390: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: DLinkInterna_ca:55:b2 (a0:a3:f0:ca:55:b2), Dst: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac)
+Internet Protocol Version 4, Src: 192.168.100.102, Dst: 192.168.100.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 40
+    Identification: 0x2c06 (11270)
+    010. .... = Flags: 0x2, Don't fragment
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: TCP (6)
+    Header Checksum: 0x8511 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.102
+    Destination Address: 192.168.100.1
+    [Stream index: 1]
+Transmission Control Protocol, Src Port: 56610, Dst Port: 8888, Seq: 423, Ack: 39341, Len: 0
+    Source Port: 56610
+    Destination Port: 8888
+    [Stream index: 3]
+    [Stream Packet Number: 653]
+    [Conversation completeness: Complete, WITH_DATA (63)]
+    [TCP Segment Len: 0]
+    Sequence Number: 423    (relative sequence number)
+    Sequence Number (raw): 3060767803
+    [Next Sequence Number: 423    (relative sequence number)]
+    Acknowledgment Number: 39341    (relative ack number)
+    Acknowledgment number (raw): 2061828719
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+    Window: 254
+    [Calculated window size: 65024]
+    [Window size scaling factor: 256]
+    Checksum: 0x9543 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+
+No.     Time           Source                Destination           Protocol Length Info
+   1391 384.637263     192.168.100.1         192.168.100.102       TCP      134    8888 → 56610 [PSH, ACK] Seq=39341 Ack=423 Win=14600 Len=80
+
+Frame 1391: 134 bytes on wire (1072 bits), 134 bytes captured (1072 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac), Dst: DLinkInterna_ca:55:b2 (a0:a3:f0:ca:55:b2)
+Internet Protocol Version 4, Src: 192.168.100.1, Dst: 192.168.100.102
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 120
+    Identification: 0x2740 (10048)
+    010. .... = Flags: 0x2, Don't fragment
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xc987 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.1
+    Destination Address: 192.168.100.102
+    [Stream index: 1]
+Transmission Control Protocol, Src Port: 8888, Dst Port: 56610, Seq: 39341, Ack: 423, Len: 80
+    Source Port: 8888
+    Destination Port: 56610
+    [Stream index: 3]
+    [Stream Packet Number: 654]
+    [Conversation completeness: Complete, WITH_DATA (63)]
+    [TCP Segment Len: 80]
+    Sequence Number: 39341    (relative sequence number)
+    Sequence Number (raw): 2061828719
+    [Next Sequence Number: 39421    (relative sequence number)]
+    Acknowledgment Number: 423    (relative ack number)
+    Acknowledgment number (raw): 3060767803
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+    Window: 1825
+    [Calculated window size: 14600]
+    [Window size scaling factor: 8]
+    Checksum: 0xe10d [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+    TCP payload (80 bytes)
+Data (80 bytes)
+
+0000  fe 20 b6 01 02 ce 66 66 88 42 55 ff fb ff d1 19   . ....ff.BU.....
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 f4 ff 00 58 a4 11 fe 20 b7 01 02 ce cf 6b   .....X... .....k
+0030  88 42 55 ff fb ff d1 19 00 00 00 00 00 00 00 00   .BU.............
+0040  00 00 00 00 00 00 00 00 00 00 f4 ff 00 58 23 8e   .............X#.
+    Data: fe20b60102ce6666884255fffbffd119000000000000000000000000000000000000f4ff0058a411fe20b70102cecf6b884255fffbffd119000000000000000000000000000000000000f4ff0058238e
+    [Length: 80]
+
+No.     Time           Source                Destination           Protocol Length Info
+   1392 384.691005     192.168.100.102       192.168.100.1         TCP      54     56610 → 8888 [ACK] Seq=423 Ack=39421 Win=65024 Len=0
+
+Frame 1392: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: DLinkInterna_ca:55:b2 (a0:a3:f0:ca:55:b2), Dst: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac)
+Internet Protocol Version 4, Src: 192.168.100.102, Dst: 192.168.100.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 40
+    Identification: 0x2c07 (11271)
+    010. .... = Flags: 0x2, Don't fragment
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: TCP (6)
+    Header Checksum: 0x8510 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.102
+    Destination Address: 192.168.100.1
+    [Stream index: 1]
+Transmission Control Protocol, Src Port: 56610, Dst Port: 8888, Seq: 423, Ack: 39421, Len: 0
+    Source Port: 56610
+    Destination Port: 8888
+    [Stream index: 3]
+    [Stream Packet Number: 655]
+    [Conversation completeness: Complete, WITH_DATA (63)]
+    [TCP Segment Len: 0]
+    Sequence Number: 423    (relative sequence number)
+    Sequence Number (raw): 3060767803
+    [Next Sequence Number: 423    (relative sequence number)]
+    Acknowledgment Number: 39421    (relative ack number)
+    Acknowledgment number (raw): 2061828799
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+    Window: 254
+    [Calculated window size: 65024]
+    [Window size scaling factor: 256]
+    Checksum: 0x94f3 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+
+No.     Time           Source                Destination           Protocol Length Info
+   1393 384.694339     192.168.100.1         192.168.100.102       TCP      174    8888 → 56610 [PSH, ACK] Seq=39421 Ack=423 Win=14600 Len=120
+
+Frame 1393: 174 bytes on wire (1392 bits), 174 bytes captured (1392 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac), Dst: DLinkInterna_ca:55:b2 (a0:a3:f0:ca:55:b2)
+Internet Protocol Version 4, Src: 192.168.100.1, Dst: 192.168.100.102
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 160
+    Identification: 0x2741 (10049)
+    010. .... = Flags: 0x2, Don't fragment
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xc95e [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.1
+    Destination Address: 192.168.100.102
+    [Stream index: 1]
+Transmission Control Protocol, Src Port: 8888, Dst Port: 56610, Seq: 39421, Ack: 423, Len: 120
+    Source Port: 8888
+    Destination Port: 56610
+    [Stream index: 3]
+    [Stream Packet Number: 656]
+    [Conversation completeness: Complete, WITH_DATA (63)]
+    [TCP Segment Len: 120]
+    Sequence Number: 39421    (relative sequence number)
+    Sequence Number (raw): 2061828799
+    [Next Sequence Number: 39541    (relative sequence number)]
+    Acknowledgment Number: 423    (relative ack number)
+    Acknowledgment number (raw): 3060767803
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+    Window: 1825
+    [Calculated window size: 14600]
+    [Window size scaling factor: 8]
+    Checksum: 0xee10 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+    TCP payload (120 bytes)
+Data (120 bytes)
+
+0000  fe 20 b8 01 02 ce cf 6b 88 42 55 ff fb ff d0 19   . .....k.BU.....
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 f4 ff 00 58 5b 4f fe 20 b9 01 02 ce cf 6b   .....X[O. .....k
+0030  88 42 55 ff fb ff d0 19 00 00 00 00 00 00 00 00   .BU.............
+0040  00 00 00 00 00 00 00 00 00 00 f4 ff 00 58 04 f5   .............X..
+0050  fe 20 ba 01 02 ce cf 6b 88 42 54 ff fb ff d0 19   . .....k.BT.....
+0060  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0070  00 00 f4 ff 00 58 c5 ca                           .....X..
+    Data […]: fe20b80102cecf6b884255fffbffd019000000000000000000000000000000000000f4ff00585b4ffe20b90102cecf6b884255fffbffd019000000000000000000000000000000000000f4ff005804f5fe20ba0102cecf6b884254fffbffd01900000000000000000000000000000000000
+    [Length: 120]
+
+No.     Time           Source                Destination           Protocol Length Info
+   1394 384.736457     192.168.100.102       192.168.100.1         TCP      54     56610 → 8888 [ACK] Seq=423 Ack=39541 Win=64768 Len=0
+
+Frame 1394: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: DLinkInterna_ca:55:b2 (a0:a3:f0:ca:55:b2), Dst: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac)
+Internet Protocol Version 4, Src: 192.168.100.102, Dst: 192.168.100.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 40
+    Identification: 0x2c08 (11272)
+    010. .... = Flags: 0x2, Don't fragment
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: TCP (6)
+    Header Checksum: 0x850f [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.102
+    Destination Address: 192.168.100.1
+    [Stream index: 1]
+Transmission Control Protocol, Src Port: 56610, Dst Port: 8888, Seq: 423, Ack: 39541, Len: 0
+    Source Port: 56610
+    Destination Port: 8888
+    [Stream index: 3]
+    [Stream Packet Number: 657]
+    [Conversation completeness: Complete, WITH_DATA (63)]
+    [TCP Segment Len: 0]
+    Sequence Number: 423    (relative sequence number)
+    Sequence Number (raw): 3060767803
+    [Next Sequence Number: 423    (relative sequence number)]
+    Acknowledgment Number: 39541    (relative ack number)
+    Acknowledgment number (raw): 2061828919
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+    Window: 253
+    [Calculated window size: 64768]
+    [Window size scaling factor: 256]
+    Checksum: 0x947c [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+
+No.     Time           Source                Destination           Protocol Length Info
+   1395 384.799525     192.168.100.102       192.168.100.1         TCP      54     56610 → 8888 [FIN, ACK] Seq=423 Ack=39541 Win=64768 Len=0
+
+Frame 1395: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: DLinkInterna_ca:55:b2 (a0:a3:f0:ca:55:b2), Dst: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac)
+Internet Protocol Version 4, Src: 192.168.100.102, Dst: 192.168.100.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 40
+    Identification: 0x2c09 (11273)
+    010. .... = Flags: 0x2, Don't fragment
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: TCP (6)
+    Header Checksum: 0x850e [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.102
+    Destination Address: 192.168.100.1
+    [Stream index: 1]
+Transmission Control Protocol, Src Port: 56610, Dst Port: 8888, Seq: 423, Ack: 39541, Len: 0
+    Source Port: 56610
+    Destination Port: 8888
+    [Stream index: 3]
+    [Stream Packet Number: 658]
+    [Conversation completeness: Complete, WITH_DATA (63)]
+    [TCP Segment Len: 0]
+    Sequence Number: 423    (relative sequence number)
+    Sequence Number (raw): 3060767803
+    [Next Sequence Number: 424    (relative sequence number)]
+    Acknowledgment Number: 39541    (relative ack number)
+    Acknowledgment number (raw): 2061828919
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x011 (FIN, ACK)
+    Window: 253
+    [Calculated window size: 64768]
+    [Window size scaling factor: 256]
+    Checksum: 0x947b [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+   1396 384.947213     192.168.100.1         192.168.100.102       TCP      574    8888 → 56610 [PSH, ACK] Seq=39541 Ack=423 Win=14600 Len=520
+
+Frame 1396: 574 bytes on wire (4592 bits), 574 bytes captured (4592 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac), Dst: DLinkInterna_ca:55:b2 (a0:a3:f0:ca:55:b2)
+Internet Protocol Version 4, Src: 192.168.100.1, Dst: 192.168.100.102
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 560
+    Identification: 0x2742 (10050)
+    010. .... = Flags: 0x2, Don't fragment
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xc7cd [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.1
+    Destination Address: 192.168.100.102
+    [Stream index: 1]
+Transmission Control Protocol, Src Port: 8888, Dst Port: 56610, Seq: 39541, Ack: 423, Len: 520
+    Source Port: 8888
+    Destination Port: 56610
+    [Stream index: 3]
+    [Stream Packet Number: 659]
+    [Conversation completeness: Complete, WITH_DATA (63)]
+    [TCP Segment Len: 520]
+    Sequence Number: 39541    (relative sequence number)
+    Sequence Number (raw): 2061828919
+    [Next Sequence Number: 40061    (relative sequence number)]
+    Acknowledgment Number: 423    (relative ack number)
+    Acknowledgment number (raw): 3060767803
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+    Window: 1825
+    [Calculated window size: 14600]
+    [Window size scaling factor: 8]
+    Checksum: 0x1b48 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+    TCP payload (520 bytes)
+Data (520 bytes)
+
+0000  fe 20 bb 01 02 ce cf 6b 88 42 55 ff fb ff d0 19   . .....k.BU.....
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 fa ff 00 58 13 e8 fe 20 bc 01 02 ce cf 6b   .....X... .....k
+0030  88 42 55 ff fb ff d0 19 00 00 00 00 00 00 00 00   .BU.............
+0040  00 00 00 00 00 00 00 00 00 00 fa ff 00 58 bd d7   .............X..
+0050  fe 20 bd 01 02 ce cf 6b 88 42 55 ff fb ff cf 19   . .....k.BU.....
+0060  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0070  00 00 fa ff 00 58 eb 14 fe 20 be 01 02 ce 2a 6d   .....X... ....*m
+0080  88 42 55 ff fb ff cf 19 00 00 00 00 00 00 00 00   .BU.............
+0090  00 00 00 00 00 00 00 00 00 00 fa ff 00 58 31 4e   .............X1N
+00a0  fe 20 bf 01 02 ce 2a 6d 88 42 55 ff fb ff cf 19   . ....*m.BU.....
+00b0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+00c0  00 00 fa ff 00 58 6e f4 fe 20 c0 01 02 ce 2a 6d   .....Xn.. ....*m
+00d0  88 42 55 ff fb ff cf 19 00 00 00 00 00 00 00 00   .BU.............
+00e0  00 00 00 00 00 00 00 00 00 00 f4 ff 00 58 06 b2   .............X..
+00f0  fe 20 c1 01 02 ce b1 63 88 42 55 ff fb ff cf 19   . .....c.BU.....
+0100  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0110  00 00 f4 ff 00 58 7d 5e fe 20 c2 01 02 ce b1 63   .....X}^. .....c
+0120  88 42 55 ff fb ff ce 19 00 00 00 00 00 00 00 00   .BU.............
+0130  00 00 00 00 00 00 00 00 00 00 f4 ff 00 58 f6 9c   .............X..
+0140  fe 20 c3 01 02 ce 48 75 88 42 55 ff fb ff ce 19   . ....Hu.BU.....
+0150  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0160  00 00 f4 ff 00 58 07 c8 fe 20 c4 01 02 ce b1 63   .....X... .....c
+0170  88 42 55 ff fb ff ce 19 00 00 00 00 00 00 00 00   .BU.............
+0180  00 00 00 00 00 00 00 00 00 00 f4 ff 00 58 07 19   .............X..
+0190  fe 20 c5 01 02 ce a2 5f 88 42 55 ff fb ff ce 19   . ....._.BU.....
+01a0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+01b0  00 00 fa ff 00 58 72 80 fe 20 c6 01 02 ce a2 5f   .....Xr.. ....._
+01c0  88 42 55 ff fb ff ce 19 00 00 00 00 00 00 00 00   .BU.............
+01d0  00 00 00 00 00 00 00 00 00 00 fa ff 00 58 82 46   .............X.F
+01e0  fe 20 c7 01 02 ce a2 5f 88 42 55 ff fb ff cd 19   . ....._.BU.....
+01f0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0200  00 00 fa ff 00 58 50 f0                           .....XP.
+    Data […]: fe20bb0102cecf6b884255fffbffd019000000000000000000000000000000000000faff005813e8fe20bc0102cecf6b884255fffbffd019000000000000000000000000000000000000faff0058bdd7fe20bd0102cecf6b884255fffbffcf1900000000000000000000000000000000000
+    [Length: 520]
+
+No.     Time           Source                Destination           Protocol Length Info
+   1397 384.947300     192.168.100.102       192.168.100.1         TCP      54     56610 → 8888 [RST, ACK] Seq=424 Ack=40061 Win=0 Len=0
+
+Frame 1397: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: DLinkInterna_ca:55:b2 (a0:a3:f0:ca:55:b2), Dst: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac)
+Internet Protocol Version 4, Src: 192.168.100.102, Dst: 192.168.100.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 40
+    Identification: 0x2c0a (11274)
+    010. .... = Flags: 0x2, Don't fragment
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: TCP (6)
+    Header Checksum: 0x850d [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.102
+    Destination Address: 192.168.100.1
+    [Stream index: 1]
+Transmission Control Protocol, Src Port: 56610, Dst Port: 8888, Seq: 424, Ack: 40061, Len: 0
+    Source Port: 56610
+    Destination Port: 8888
+    [Stream index: 3]
+    [Stream Packet Number: 660]
+    [Conversation completeness: Complete, WITH_DATA (63)]
+    [TCP Segment Len: 0]
+    Sequence Number: 424    (relative sequence number)
+    Sequence Number (raw): 3060767804
+    [Next Sequence Number: 424    (relative sequence number)]
+    Acknowledgment Number: 40061    (relative ack number)
+    Acknowledgment number (raw): 2061829439
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x014 (RST, ACK)
+    Window: 0
+    [Calculated window size: 0]
+    [Window size scaling factor: 256]
+    Checksum: 0x936c [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+
+No.     Time           Source                Destination           Protocol Length Info
+   1398 385.000072     192.168.100.1         192.168.100.102       TCP      54     [TCP Dup ACK 1356#1] 8888 → 56610 [ACK] Seq=40061 Ack=423 Win=14600 Len=0
+
+Frame 1398: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac), Dst: DLinkInterna_ca:55:b2 (a0:a3:f0:ca:55:b2)
+Internet Protocol Version 4, Src: 192.168.100.1, Dst: 192.168.100.102
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 40
+    Identification: 0x2743 (10051)
+    010. .... = Flags: 0x2, Don't fragment
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xc9d4 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.1
+    Destination Address: 192.168.100.102
+    [Stream index: 1]
+Transmission Control Protocol, Src Port: 8888, Dst Port: 56610, Seq: 40061, Ack: 423, Len: 0
+    Source Port: 8888
+    Destination Port: 56610
+    [Stream index: 3]
+    [Stream Packet Number: 661]
+    [Conversation completeness: Complete, WITH_DATA (63)]
+    [TCP Segment Len: 0]
+    Sequence Number: 40061    (relative sequence number)
+    Sequence Number (raw): 2061829439
+    [Next Sequence Number: 40061    (relative sequence number)]
+    Acknowledgment Number: 423    (relative ack number)
+    Acknowledgment number (raw): 3060767803
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+    Window: 1825
+    [Calculated window size: 14600]
+    [Window size scaling factor: 8]
+    Checksum: 0x8c50 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+
+No.     Time           Source                Destination           Protocol Length Info
+   1399 385.201329     192.168.100.1         192.168.100.102       TCP      694    [TCP Window Full] [TCP Spurious Retransmission] 8888 → 56610 [PSH, ACK] Seq=39421 Ack=423 Win=14600 Len=640
+
+Frame 1399: 694 bytes on wire (5552 bits), 694 bytes captured (5552 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac), Dst: DLinkInterna_ca:55:b2 (a0:a3:f0:ca:55:b2)
+Internet Protocol Version 4, Src: 192.168.100.1, Dst: 192.168.100.102
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 680
+    Identification: 0x2744 (10052)
+    010. .... = Flags: 0x2, Don't fragment
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xc753 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.1
+    Destination Address: 192.168.100.102
+    [Stream index: 1]
+Transmission Control Protocol, Src Port: 8888, Dst Port: 56610, Seq: 39421, Ack: 423, Len: 640
+    Source Port: 8888
+    Destination Port: 56610
+    [Stream index: 3]
+    [Stream Packet Number: 662]
+    [Conversation completeness: Complete, WITH_DATA (63)]
+    [TCP Segment Len: 640]
+    Sequence Number: 39421    (relative sequence number)
+    Sequence Number (raw): 2061828799
+    [Next Sequence Number: 40061    (relative sequence number)]
+    Acknowledgment Number: 423    (relative ack number)
+    Acknowledgment number (raw): 3060767803
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+    Window: 1825
+    [Calculated window size: 14600]
+    [Window size scaling factor: 8]
+    Checksum: 0x7b08 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+    TCP payload (640 bytes)
+    Retransmitted TCP segment data (640 bytes)
+
+No.     Time           Source                Destination           Protocol Length Info
+   1400 385.295086     192.168.100.1         192.168.100.102       ICMP     98     Echo (ping) request  id=0x1c7d, seq=0/0, ttl=64 (reply in 1401)
+
+Frame 1400: 98 bytes on wire (784 bits), 98 bytes captured (784 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac), Dst: DLinkInterna_ca:55:b2 (a0:a3:f0:ca:55:b2)
+Internet Protocol Version 4, Src: 192.168.100.1, Dst: 192.168.100.102
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 84
+    Identification: 0x13c0 (5056)
+    010. .... = Flags: 0x2, Don't fragment
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: ICMP (1)
+    Header Checksum: 0xdd30 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.1
+    Destination Address: 192.168.100.102
+    [Stream index: 1]
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf559 [correct]
+    [Checksum Status: Good]
+    Identifier (BE): 7293 (0x1c7d)
+    Identifier (LE): 32028 (0x7d1c)
+    Sequence Number (BE): 0 (0x0000)
+    Sequence Number (LE): 0 (0x0000)
+    [Response frame: 1401]
+    Data (56 bytes)
+
+0000  0b de da 4a 00 00 00 00 00 00 00 00 00 00 00 00   ...J............
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00                           ........
+        Data: 0bdeda4a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+        [Length: 56]
+
+No.     Time           Source                Destination           Protocol Length Info
+   1401 385.295457     192.168.100.102       192.168.100.1         ICMP     98     Echo (ping) reply    id=0x1c7d, seq=0/0, ttl=128 (request in 1400)
+
+Frame 1401: 98 bytes on wire (784 bits), 98 bytes captured (784 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: DLinkInterna_ca:55:b2 (a0:a3:f0:ca:55:b2), Dst: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac)
+Internet Protocol Version 4, Src: 192.168.100.102, Dst: 192.168.100.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 84
+    Identification: 0x2c0b (11275)
+    000. .... = Flags: 0x0
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: ICMP (1)
+    Header Checksum: 0xc4e5 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.102
+    Destination Address: 192.168.100.1
+    [Stream index: 1]
+Internet Control Message Protocol
+    Type: 0 (Echo (ping) reply)
+    Code: 0
+    Checksum: 0xfd59 [correct]
+    [Checksum Status: Good]
+    Identifier (BE): 7293 (0x1c7d)
+    Identifier (LE): 32028 (0x7d1c)
+    Sequence Number (BE): 0 (0x0000)
+    Sequence Number (LE): 0 (0x0000)
+    [Request frame: 1400]
+    [Response time: 0,371 ms]
+    Data (56 bytes)
+
+0000  0b de da 4a 00 00 00 00 00 00 00 00 00 00 00 00   ...J............
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00                           ........
+        Data: 0bdeda4a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+        [Length: 56]
+
+No.     Time           Source                Destination           Protocol Length Info
+   1402 385.302885     192.168.100.1         192.168.100.255       UDP      86     53785 → 8668 Len=44
+
+Frame 1402: 86 bytes on wire (688 bits), 86 bytes captured (688 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Internet Protocol Version 4, Src: 192.168.100.1, Dst: 192.168.100.255
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 72
+    Identification: 0xc721 (50977)
+    010. .... = Flags: 0x2, Don't fragment
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0x2932 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.1
+    Destination Address: 192.168.100.255
+    [Stream index: 0]
+User Datagram Protocol, Src Port: 53785, Dst Port: 8668
+Data (44 bytes)
+
+0000  fe 24 b4 00 00 e8 43 4e 32 34 30 32 30 31 30 39   .$....CN24020109
+0010  36 30 00 00 00 00 31 39 32 2e 31 36 38 2e 31 30   60....192.168.10
+0020  30 2e 31 00 00 00 c0 00 66 00 12 4b               0.1.....f..K
+    Data: fe24b40000e8434e32343032303130393630000000003139322e3136382e3130302e31000000c0006600124b
+    [Length: 44]
+
+No.     Time           Source                Destination           Protocol Length Info
+   1403 385.710461     192.168.100.1         192.168.100.102       TCP      694    [TCP Window Full] [TCP Spurious Retransmission] 8888 → 56610 [PSH, ACK] Seq=39421 Ack=423 Win=14600 Len=640
+
+Frame 1403: 694 bytes on wire (5552 bits), 694 bytes captured (5552 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac), Dst: DLinkInterna_ca:55:b2 (a0:a3:f0:ca:55:b2)
+Internet Protocol Version 4, Src: 192.168.100.1, Dst: 192.168.100.102
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 680
+    Identification: 0x2745 (10053)
+    010. .... = Flags: 0x2, Don't fragment
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xc752 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.1
+    Destination Address: 192.168.100.102
+    [Stream index: 1]
+Transmission Control Protocol, Src Port: 8888, Dst Port: 56610, Seq: 39421, Ack: 423, Len: 640
+    Source Port: 8888
+    Destination Port: 56610
+    [Stream index: 3]
+    [Stream Packet Number: 663]
+    [Conversation completeness: Complete, WITH_DATA (63)]
+    [TCP Segment Len: 640]
+    Sequence Number: 39421    (relative sequence number)
+    Sequence Number (raw): 2061828799
+    [Next Sequence Number: 40061    (relative sequence number)]
+    Acknowledgment Number: 423    (relative ack number)
+    Acknowledgment number (raw): 3060767803
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+    Window: 1825
+    [Calculated window size: 14600]
+    [Window size scaling factor: 8]
+    Checksum: 0x7b08 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+    TCP payload (640 bytes)
+    Retransmitted TCP segment data (640 bytes)
+
+No.     Time           Source                Destination           Protocol Length Info
+   1404 386.338426     192.168.100.1         192.168.100.102       ICMP     98     Echo (ping) request  id=0x3a7d, seq=0/0, ttl=64 (reply in 1405)
+
+Frame 1404: 98 bytes on wire (784 bits), 98 bytes captured (784 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac), Dst: DLinkInterna_ca:55:b2 (a0:a3:f0:ca:55:b2)
+Internet Protocol Version 4, Src: 192.168.100.1, Dst: 192.168.100.102
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 84
+    Identification: 0x1709 (5897)
+    010. .... = Flags: 0x2, Don't fragment
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: ICMP (1)
+    Header Checksum: 0xd9e7 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.1
+    Destination Address: 192.168.100.102
+    [Stream index: 1]
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0x4271 [correct]
+    [Checksum Status: Good]
+    Identifier (BE): 14973 (0x3a7d)
+    Identifier (LE): 32058 (0x7d3a)
+    Sequence Number (BE): 0 (0x0000)
+    Sequence Number (LE): 0 (0x0000)
+    [Response frame: 1405]
+    Data (56 bytes)
+
+0000  90 c6 ea 4a 00 00 00 00 00 00 00 00 00 00 00 00   ...J............
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00                           ........
+        Data: 90c6ea4a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+        [Length: 56]
+
+No.     Time           Source                Destination           Protocol Length Info
+   1405 386.338914     192.168.100.102       192.168.100.1         ICMP     98     Echo (ping) reply    id=0x3a7d, seq=0/0, ttl=128 (request in 1404)
+
+Frame 1405: 98 bytes on wire (784 bits), 98 bytes captured (784 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: DLinkInterna_ca:55:b2 (a0:a3:f0:ca:55:b2), Dst: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac)
+Internet Protocol Version 4, Src: 192.168.100.102, Dst: 192.168.100.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 84
+    Identification: 0x2c0c (11276)
+    000. .... = Flags: 0x0
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: ICMP (1)
+    Header Checksum: 0xc4e4 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.102
+    Destination Address: 192.168.100.1
+    [Stream index: 1]
+Internet Control Message Protocol
+    Type: 0 (Echo (ping) reply)
+    Code: 0
+    Checksum: 0x4a71 [correct]
+    [Checksum Status: Good]
+    Identifier (BE): 14973 (0x3a7d)
+    Identifier (LE): 32058 (0x7d3a)
+    Sequence Number (BE): 0 (0x0000)
+    Sequence Number (LE): 0 (0x0000)
+    [Request frame: 1404]
+    [Response time: 0,488 ms]
+    Data (56 bytes)
+
+0000  90 c6 ea 4a 00 00 00 00 00 00 00 00 00 00 00 00   ...J............
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00                           ........
+        Data: 90c6ea4a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+        [Length: 56]
+
+No.     Time           Source                Destination           Protocol Length Info
+   1406 386.344781     192.168.100.1         192.168.100.255       UDP      86     53785 → 8668 Len=44
+
+Frame 1406: 86 bytes on wire (688 bits), 86 bytes captured (688 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Internet Protocol Version 4, Src: 192.168.100.1, Dst: 192.168.100.255
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 72
+    Identification: 0xc77a (51066)
+    010. .... = Flags: 0x2, Don't fragment
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0x28d9 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.1
+    Destination Address: 192.168.100.255
+    [Stream index: 0]
+User Datagram Protocol, Src Port: 53785, Dst Port: 8668
+Data (44 bytes)
+
+0000  fe 24 b6 00 00 e8 43 4e 32 34 30 32 30 31 30 39   .$....CN24020109
+0010  36 30 00 00 00 00 31 39 32 2e 31 36 38 2e 31 30   60....192.168.10
+0020  30 2e 31 00 00 00 c0 00 66 00 ad 7e               0.1.....f..~
+    Data: fe24b60000e8434e32343032303130393630000000003139322e3136382e3130302e31000000c0006600ad7e
+    [Length: 44]
+
+No.     Time           Source                Destination           Protocol Length Info
+   1407 386.729224     192.168.100.1         192.168.100.102       TCP      694    [TCP Window Full] [TCP Spurious Retransmission] 8888 → 56610 [PSH, ACK] Seq=39421 Ack=423 Win=14600 Len=640
+
+Frame 1407: 694 bytes on wire (5552 bits), 694 bytes captured (5552 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac), Dst: DLinkInterna_ca:55:b2 (a0:a3:f0:ca:55:b2)
+Internet Protocol Version 4, Src: 192.168.100.1, Dst: 192.168.100.102
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 680
+    Identification: 0x2746 (10054)
+    010. .... = Flags: 0x2, Don't fragment
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xc751 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.1
+    Destination Address: 192.168.100.102
+    [Stream index: 1]
+Transmission Control Protocol, Src Port: 8888, Dst Port: 56610, Seq: 39421, Ack: 423, Len: 640
+    Source Port: 8888
+    Destination Port: 56610
+    [Stream index: 3]
+    [Stream Packet Number: 664]
+    [Conversation completeness: Complete, WITH_DATA (63)]
+    [TCP Segment Len: 640]
+    Sequence Number: 39421    (relative sequence number)
+    Sequence Number (raw): 2061828799
+    [Next Sequence Number: 40061    (relative sequence number)]
+    Acknowledgment Number: 423    (relative ack number)
+    Acknowledgment number (raw): 3060767803
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+    Window: 1825
+    [Calculated window size: 14600]
+    [Window size scaling factor: 8]
+    Checksum: 0x7b08 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+    TCP payload (640 bytes)
+    Retransmitted TCP segment data (640 bytes)
+
+No.     Time           Source                Destination           Protocol Length Info
+   1408 387.360283     192.168.100.1         192.168.100.102       ICMP     98     Echo (ping) request  id=0x567d, seq=0/0, ttl=64 (reply in 1409)
+
+Frame 1408: 98 bytes on wire (784 bits), 98 bytes captured (784 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac), Dst: DLinkInterna_ca:55:b2 (a0:a3:f0:ca:55:b2)
+Internet Protocol Version 4, Src: 192.168.100.1, Dst: 192.168.100.102
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 84
+    Identification: 0x178e (6030)
+    010. .... = Flags: 0x2, Don't fragment
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: ICMP (1)
+    Header Checksum: 0xd962 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.1
+    Destination Address: 192.168.100.102
+    [Stream index: 1]
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xebd6 [correct]
+    [Checksum Status: Good]
+    Identifier (BE): 22141 (0x567d)
+    Identifier (LE): 32086 (0x7d56)
+    Sequence Number (BE): 0 (0x0000)
+    Sequence Number (LE): 0 (0x0000)
+    [Response frame: 1409]
+    Data (56 bytes)
+
+0000  bb 60 fa 4a 00 00 00 00 00 00 00 00 00 00 00 00   .`.J............
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00                           ........
+        Data: bb60fa4a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+        [Length: 56]
+
+No.     Time           Source                Destination           Protocol Length Info
+   1409 387.360556     192.168.100.102       192.168.100.1         ICMP     98     Echo (ping) reply    id=0x567d, seq=0/0, ttl=128 (request in 1408)
+
+Frame 1409: 98 bytes on wire (784 bits), 98 bytes captured (784 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: DLinkInterna_ca:55:b2 (a0:a3:f0:ca:55:b2), Dst: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac)
+Internet Protocol Version 4, Src: 192.168.100.102, Dst: 192.168.100.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 84
+    Identification: 0x2c0d (11277)
+    000. .... = Flags: 0x0
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: ICMP (1)
+    Header Checksum: 0xc4e3 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.102
+    Destination Address: 192.168.100.1
+    [Stream index: 1]
+Internet Control Message Protocol
+    Type: 0 (Echo (ping) reply)
+    Code: 0
+    Checksum: 0xf3d6 [correct]
+    [Checksum Status: Good]
+    Identifier (BE): 22141 (0x567d)
+    Identifier (LE): 32086 (0x7d56)
+    Sequence Number (BE): 0 (0x0000)
+    Sequence Number (LE): 0 (0x0000)
+    [Request frame: 1408]
+    [Response time: 0,273 ms]
+    Data (56 bytes)
+
+0000  bb 60 fa 4a 00 00 00 00 00 00 00 00 00 00 00 00   .`.J............
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00                           ........
+        Data: bb60fa4a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+        [Length: 56]
+
+No.     Time           Source                Destination           Protocol Length Info
+   1410 387.370337     192.168.100.1         192.168.100.255       UDP      86     53785 → 8668 Len=44
+
+Frame 1410: 86 bytes on wire (688 bits), 86 bytes captured (688 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Internet Protocol Version 4, Src: 192.168.100.1, Dst: 192.168.100.255
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 72
+    Identification: 0xc915 (51477)
+    010. .... = Flags: 0x2, Don't fragment
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0x273e [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.1
+    Destination Address: 192.168.100.255
+    [Stream index: 0]
+User Datagram Protocol, Src Port: 53785, Dst Port: 8668
+Data (44 bytes)
+
+0000  fe 24 b8 00 00 e8 43 4e 32 34 30 32 30 31 30 39   .$....CN24020109
+0010  36 30 00 00 00 00 31 39 32 2e 31 36 38 2e 31 30   60....192.168.10
+0020  30 2e 31 00 00 00 c0 00 66 00 90 f6               0.1.....f...
+    Data: fe24b80000e8434e32343032303130393630000000003139322e3136382e3130302e31000000c000660090f6
+    [Length: 44]
+
+No.     Time           Source                Destination           Protocol Length Info
+   1411 388.454958     192.168.100.1         192.168.100.102       ICMP     98     Echo (ping) request  id=0x747d, seq=0/0, ttl=64 (reply in 1412)
+
+Frame 1411: 98 bytes on wire (784 bits), 98 bytes captured (784 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac), Dst: DLinkInterna_ca:55:b2 (a0:a3:f0:ca:55:b2)
+Internet Protocol Version 4, Src: 192.168.100.1, Dst: 192.168.100.102
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 84
+    Identification: 0x190c (6412)
+    010. .... = Flags: 0x2, Don't fragment
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: ICMP (1)
+    Header Checksum: 0xd7e4 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.1
+    Destination Address: 192.168.100.102
+    [Stream index: 1]
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0x9bf0 [correct]
+    [Checksum Status: Good]
+    Identifier (BE): 29821 (0x747d)
+    Identifier (LE): 32116 (0x7d74)
+    Sequence Number (BE): 0 (0x0000)
+    Sequence Number (LE): 0 (0x0000)
+    [Response frame: 1412]
+    Data (56 bytes)
+
+0000  dd 46 0a 4b 00 00 00 00 00 00 00 00 00 00 00 00   .F.K............
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00                           ........
+        Data: dd460a4b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+        [Length: 56]
+
+No.     Time           Source                Destination           Protocol Length Info
+   1412 388.455316     192.168.100.102       192.168.100.1         ICMP     98     Echo (ping) reply    id=0x747d, seq=0/0, ttl=128 (request in 1411)
+
+Frame 1412: 98 bytes on wire (784 bits), 98 bytes captured (784 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: DLinkInterna_ca:55:b2 (a0:a3:f0:ca:55:b2), Dst: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac)
+Internet Protocol Version 4, Src: 192.168.100.102, Dst: 192.168.100.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 84
+    Identification: 0x2c0e (11278)
+    000. .... = Flags: 0x0
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: ICMP (1)
+    Header Checksum: 0xc4e2 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.102
+    Destination Address: 192.168.100.1
+    [Stream index: 1]
+Internet Control Message Protocol
+    Type: 0 (Echo (ping) reply)
+    Code: 0
+    Checksum: 0xa3f0 [correct]
+    [Checksum Status: Good]
+    Identifier (BE): 29821 (0x747d)
+    Identifier (LE): 32116 (0x7d74)
+    Sequence Number (BE): 0 (0x0000)
+    Sequence Number (LE): 0 (0x0000)
+    [Request frame: 1411]
+    [Response time: 0,358 ms]
+    Data (56 bytes)
+
+0000  dd 46 0a 4b 00 00 00 00 00 00 00 00 00 00 00 00   .F.K............
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00                           ........
+        Data: dd460a4b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+        [Length: 56]
+
+No.     Time           Source                Destination           Protocol Length Info
+   1413 388.466354     192.168.100.1         192.168.100.255       UDP      86     53785 → 8668 Len=44
+
+Frame 1413: 86 bytes on wire (688 bits), 86 bytes captured (688 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Internet Protocol Version 4, Src: 192.168.100.1, Dst: 192.168.100.255
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 72
+    Identification: 0xcab0 (51888)
+    010. .... = Flags: 0x2, Don't fragment
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0x25a3 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.1
+    Destination Address: 192.168.100.255
+    [Stream index: 0]
+User Datagram Protocol, Src Port: 53785, Dst Port: 8668
+Data (44 bytes)
+
+0000  fe 24 ba 00 00 e8 43 4e 32 34 30 32 30 31 30 39   .$....CN24020109
+0010  36 30 00 00 00 00 31 39 32 2e 31 36 38 2e 31 30   60....192.168.10
+0020  30 2e 31 00 00 00 c0 00 66 00 2f c3               0.1.....f./.
+    Data: fe24ba0000e8434e32343032303130393630000000003139322e3136382e3130302e31000000c00066002fc3
+    [Length: 44]
+
+No.     Time           Source                Destination           Protocol Length Info
+   1414 388.768476     192.168.100.1         192.168.100.102       TCP      694    [TCP Window Full] [TCP Spurious Retransmission] 8888 → 56610 [PSH, ACK] Seq=39421 Ack=423 Win=14600 Len=640
+
+Frame 1414: 694 bytes on wire (5552 bits), 694 bytes captured (5552 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac), Dst: DLinkInterna_ca:55:b2 (a0:a3:f0:ca:55:b2)
+Internet Protocol Version 4, Src: 192.168.100.1, Dst: 192.168.100.102
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 680
+    Identification: 0x2747 (10055)
+    010. .... = Flags: 0x2, Don't fragment
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xc750 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.1
+    Destination Address: 192.168.100.102
+    [Stream index: 1]
+Transmission Control Protocol, Src Port: 8888, Dst Port: 56610, Seq: 39421, Ack: 423, Len: 640
+    Source Port: 8888
+    Destination Port: 56610
+    [Stream index: 3]
+    [Stream Packet Number: 665]
+    [Conversation completeness: Complete, WITH_DATA (63)]
+    [TCP Segment Len: 640]
+    Sequence Number: 39421    (relative sequence number)
+    Sequence Number (raw): 2061828799
+    [Next Sequence Number: 40061    (relative sequence number)]
+    Acknowledgment Number: 423    (relative ack number)
+    Acknowledgment number (raw): 3060767803
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+    Window: 1825
+    [Calculated window size: 14600]
+    [Window size scaling factor: 8]
+    Checksum: 0x7b08 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+    TCP payload (640 bytes)
+    Retransmitted TCP segment data (640 bytes)
+
+No.     Time           Source                Destination           Protocol Length Info
+   1415 389.538790     192.168.100.1         192.168.100.102       ICMP     98     Echo (ping) request  id=0x917d, seq=0/0, ttl=64 (reply in 1416)
+
+Frame 1415: 98 bytes on wire (784 bits), 98 bytes captured (784 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac), Dst: DLinkInterna_ca:55:b2 (a0:a3:f0:ca:55:b2)
+Internet Protocol Version 4, Src: 192.168.100.1, Dst: 192.168.100.102
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 84
+    Identification: 0x1a18 (6680)
+    010. .... = Flags: 0x2, Don't fragment
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: ICMP (1)
+    Header Checksum: 0xd6d8 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.1
+    Destination Address: 192.168.100.102
+    [Stream index: 1]
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0x5697 [correct]
+    [Checksum Status: Good]
+    Identifier (BE): 37245 (0x917d)
+    Identifier (LE): 32145 (0x7d91)
+    Sequence Number (BE): 0 (0x0000)
+    Sequence Number (LE): 0 (0x0000)
+    [Response frame: 1416]
+    Data (56 bytes)
+
+0000  f4 9f 1b 4b 00 00 00 00 00 00 00 00 00 00 00 00   ...K............
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00                           ........
+        Data: f49f1b4b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+        [Length: 56]
+
+No.     Time           Source                Destination           Protocol Length Info
+   1416 389.539070     192.168.100.102       192.168.100.1         ICMP     98     Echo (ping) reply    id=0x917d, seq=0/0, ttl=128 (request in 1415)
+
+Frame 1416: 98 bytes on wire (784 bits), 98 bytes captured (784 bits) on interface \Device\NPF_{762A3821-E4C2-4F33-9E66-D46B35E7C715}, id 0
+Ethernet II, Src: DLinkInterna_ca:55:b2 (a0:a3:f0:ca:55:b2), Dst: 9a:03:cf:50:1f:ac (9a:03:cf:50:1f:ac)
+Internet Protocol Version 4, Src: 192.168.100.102, Dst: 192.168.100.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 84
+    Identification: 0x2c0f (11279)
+    000. .... = Flags: 0x0
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: ICMP (1)
+    Header Checksum: 0xc4e1 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.102
+    Destination Address: 192.168.100.1
+    [Stream index: 1]
+Internet Control Message Protocol
+    Type: 0 (Echo (ping) reply)
+    Code: 0
+    Checksum: 0x5e97 [correct]
+    [Checksum Status: Good]
+    Identifier (BE): 37245 (0x917d)
+    Identifier (LE): 32145 (0x7d91)
+    Sequence Number (BE): 0 (0x0000)
+    Sequence Number (LE): 0 (0x0000)
+    [Request frame: 1415]
+    [Response time: 0,280 ms]
+    Data (56 bytes)
+
+0000  f4 9f 1b 4b 00 00 00 00 00 00 00 00 00 00 00 00   ...K............
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00                           ........
+        Data: f49f1b4b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+        [Length: 56]
